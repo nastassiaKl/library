@@ -37,5 +37,35 @@ public class OrderLogic {
         }
     }
 
-   
+   public boolean checkPersonalOrders(int idUser) throws LogicException {
+        try {
+            return orderDAO.checkPersonalOrders(idUser);
+        } catch (DAOException e) {
+            throw new LogicException(e);
+        }
+    }
+
+    public List<Order> getPersonalOrders(int idUser) throws LogicException {
+        try {
+            return orderDAO.getPersonalOrders(idUser);
+        } catch (DAOException e) {
+            throw new LogicException(e);
+        }
+    }
+
+    public void takeOrder(Order order) throws LogicException {
+        try {
+            borrowBookDAO.addOrder(order);
+        } catch (DAOException e) {
+            throw new LogicException(e);
+        }
+    }
+
+    public List<Order> getApprovedOrders(int idUser) throws LogicException {
+        try {
+            return borrowBookDAO.getApprovedOrders(idUser);
+        } catch (DAOException e) {
+            throw new LogicException(e);
+        }
+    }
 }
