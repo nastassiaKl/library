@@ -7,7 +7,7 @@ import by.kalinklish.project.exception.LogicException;
 import by.kalinklish.project.logic.ReaderLogic;
 import by.kalinklish.project.manager.MessageManager;
 import by.kalinklish.project.command.Command;
-import by.radomskaya.project.constant.*;
+import by.kalinklish.project.constant.*;
 import by.kalinklish.project.controller.Router;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
