@@ -1,13 +1,13 @@
-package by.kalinklish.project.command.admin.author;
+package by.kalinklish.project.command.admin.librarian;
 
 import by.kalinklish.project.command.Command;
 import by.kalinklish.project.constant.JspPageConstants;
 import by.kalinklish.project.constant.ParameterConstants;
 import by.kalinklish.project.controller.Router;
-import by.kalinklish.project.entity.Author;
+import by.kalinklish.project.entity.User;
 import by.kalinklish.project.exception.CommandException;
 import by.kalinklish.project.exception.LogicException;
-import by.kalinklish.project.logic.AuthorLogic;
+import by.kalinklish.project.logic.LibrarianLogic;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -15,12 +15,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.List;
 
-public class ShowAuthorsCommand implements Command {
-    private final static Logger LOGGER = LogManager.getLogger(ShowAuthorsCommand.class);
-    private AuthorLogic authorLogic;
+public class ShowLibrariansCommand implements Command {
+    private final static Logger LOGGER = LogManager.getLogger(ShowLibrariansCommand.class);
+    private LibrarianLogic librarianLogic;
 
-    public ShowAuthorsCommand(AuthorLogic authorLogic) {
-        this.authorLogic = authorLogic;
+    public ShowLibrariansCommand(LibrarianLogic librarianLogic) {
+        this.librarianLogic = librarianLogic;
     }
 
     @Override
@@ -28,12 +28,13 @@ public class ShowAuthorsCommand implements Command {
         Router router = new Router();
         HttpSession session = request.getSession();
         String page = null;
-        List<Author> listAuthors;
+        List<User> listLibrarians;
 
         try {
-            listAuthors = authorLogic.getAuthors();
-            session.setAttribute(ParameterConstants.PARAM_AUTHORS, listAuthors);
-            page = JspPageConstants.ADMIN_AUTHORS_PAGE;
+            listLibrarians = librarianLogic.getLibrarians();
+
+            session.setAttribute(ParameterConstants.PARAM_LIBRARIANS, listLibrarians);
+            page = JspPageConstants.ADMIN_LIBRARIANS_PAGE;
         } catch (LogicException e) {
             LOGGER.error(e);
         }
