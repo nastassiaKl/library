@@ -1,0 +1,254 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+footer {
+    position: absolute;
+    bottom: -50px;
+    width: 200px;
+    height: 60px;
+}
+
+.body {
+    background-color: #a48b7a;
+}
+
+.body-error {
+    background-image: url(/resource/images/error.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-clip: border-box;
+    background-origin: content-box;
+    background-size: cover;
+}
+
+.form-login {
+    position: relative;
+    left: 100px;
+    width: 1000px;
+    margin-top: 20%;
+}
+
+.btn-function {
+    position: relative;
+    left: 10px;
+    margin: 50px;
+    border: none;
+    background-color: inherit;
+    font-size: 38px;
+}
+
+.btn-function:hover, :focus {
+    border: none;
+    outline: none;
+    color: #802e36;
+}
+
+.form-param {
+    background-color: #e0c6a673;
+    margin-top: 70px;
+    padding: 50px;
+    border-radius: 1%;
+    box-shadow: 0 0 0 3px #806756, 0 0 13px #1b1e21;
+}
+
+.btn-book {
+    position: relative;
+    left: 350px;
+    padding: 20px;
+}
+
+.a-function {
+    color: #a6e5e2;
+    font-size: 30px;
+    margin: 20px;
+}
+
+.a-function:hover, .a-function:focus {
+    color: #ffc3a0;
+    text-decoration: none;
+}
+
+.a-function-orders {
+    position: relative;
+    top: -50px;
+    color: #a6e5e2;
+    font-size: 30px;
+}
+
+.a-function-orders:hover, .a-function-orders:focus {
+    color: #ffc3a0;
+    text-decoration: none;
+}
+
+.a-edit-user {
+    position: relative;
+    left: 550px;
+    color: #a6e5e2;
+    font-size: 30px;
+}
+
+.a-edit-user:hover, .a-edit-user:focus {
+    color: #ffc3a0;
+    text-decoration: none;
+}
+
+.a-forgot-password {
+    position: relative;
+    left: 350px;
+    top: -50px;
+    color: #a6e5e2;
+    font-size: 17px
+}
+
+.a-forgot-password:hover, .a-forgot-password:focus {
+    color: #ffc3a0;
+    text-decoration: none;
+}
+
+.find-book {
+    height: 50px;
+    width: 230px;
+    background-color: #ffc3a0;
+}
+
+.find-book-input {
+    height: 50px;
+}
+
+.parameter {
+    color: white;
+    font-size: 30px;
+    padding: 30px;
+}
+
+.h-parameter {
+    position: relative;
+    left: 50px;
+}
+
+.persImageBook {
+    position: relative;
+    left: 300px;
+    width: 600px;
+    height: 700px;
+    padding: 30px;
+}
+
+.image-librarian {
+    position: absolute;
+    top: 250px;
+    left: 890px;
+    height: 700px;
+}
+
+.profile-photo {
+    position: relative;
+    left: 300px;
+    width: 600px;
+    height: 700px;
+    padding: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #46757a, 0 0 13px #0a343e;
+}
+
+.heading {
+    position: relative;
+    left: 900px;
+    padding: 50px;
+}
+
+.welcome {
+    position: relative;
+    left: 350px;
+    color: #40280f;
+    font-size: 35px;
+}
+
+.admin-welcome {
+    position: relative;
+    left: 180px;
+    top: 300px;
+    color: #40280f;
+    font-size: 70px;
+}
+
+.main-welcome {
+    position: relative;
+    left: 230px;
+    color: #40280f;
+    font-size: 35px;
+}
+
+.imageBook {
+    width: 150px;
+    height: 200px;
+}
+
+.table-thead {
+    background-color: #d2bba7;
+}
+
+.button {
+    background-color: #ffc3a0;
+    color: #fffbec;
+    width: 200px;
+    height: 50px;
+}
+
+.button-registr {
+    background-color: #0c6975;
+    color: #d6af9a;
+}
+
+.button-registr:hover {
+    box-shadow: 0 0 10px 10px #0a343e;
+}
+
+.header {
+    text-align: center;
+    color: #0c6975;
+    padding: 20px;
+}
+
+.field:hover {
+    color: #802e36;
+    box-shadow: 0 0 10px 10px #802e36;
+}
+
+.my-label {
+    font-size: 200%;
+    color: #5a5050;
+}
+
+.footer-button {
+    position: absolute;
+    left: 2030px;
+    top: 20px;
+    width: 150px;
+}
+
+.button-footer {
+    font-size: 25px;
+    border: none;
+    background-color: inherit;
+    color: #5a5050;
+}
+
+.button-footer:hover {
+    text-decoration: none;
+    color: #b5a49c;
+}
+
+.pos-alert {
+    position: relative;
+    top: 150px;
+    left: 100px;
+}
+
